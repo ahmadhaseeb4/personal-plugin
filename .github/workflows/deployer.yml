@@ -10,8 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy
-        run: .././deploy.sh
-        shell: bash
+        run: ahmadhaseeb4/plugin-deployer@stable
         env:
           SVN_PASSWORD: "=> PASSWORD"
           SVN_USERNAME: "=> USERNAME"

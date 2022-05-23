@@ -14,6 +14,6 @@ jobs:
         env:
           SVN_PASSWORD: "12345678aA"
           SVN_USERNAME: "muhammad007"
-          SVN_URL: "https://james-bond.unfuddle.com/svn/james-bond_repo/"
+          URL: "https://james-bond.unfuddle.com/svn/james-bond_repo/"
 
 

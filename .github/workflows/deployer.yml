@@ -16,5 +16,3 @@ jobs:
           SVN_USERNAME: "muhammad007"
           URL: "https://james-bond.unfuddle.com/svn/james-bond_repo/"
           SLUG: "tester"
-
-

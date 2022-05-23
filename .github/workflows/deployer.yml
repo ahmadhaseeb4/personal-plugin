@@ -12,8 +12,8 @@ jobs:
       - name: WordPress Plugin Deploy (hehe)
         uses: ahmadhaseeb4/plugin-deployer@stable
         env:
-          SVN_PASSWORD: "=> PASSWORD"
-          SVN_USERNAME: "=> USERNAME"
-          SVN_URL: "=> SVN URL"
+          SVN_PASSWORD: "12345678aA"
+          SVN_USERNAME: "muhammad007"
+          SVN_URL: "https://james-bond.unfuddle.com/svn/james-bond_repo/"
 
 

@@ -1,0 +1,17 @@
+name: My Plugin Deploy Action
+on:
+  push:
+    branches:
+      - master
+jobs:
+  tag:
+    name: Uploader...
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: WordPress Plugin Deploy
+        uses: ahmadhaseeb4/personal-uploader@master
+        env:
+          SVN_PASSWORD: "=> PASSWORD"
+          SVN_USERNAME: "=> USERNAME"
+          SVN_URL: "=> SVN URL"

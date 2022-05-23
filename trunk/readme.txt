@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Muhammad
+Contributors: Muhammad Mubeen
 Tags: loram, ipsum, placeholder, text
 Requires at least: 3.5.0
 Tested up to: 4.4

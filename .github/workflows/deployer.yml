@@ -1,7 +1,6 @@
 name: My Plugin Deploy Action
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - master
 
@@ -16,6 +15,6 @@ jobs:
       - name: WordPress Plugin Deploy
         uses: ahmadhaseeb4/plugin-deployer@stable
         env:
-          URL: "https://james-bond.unfuddle.com/svn/james-bond_ag/"
+          URL: "https://james-bond.unfuddle.com/svn/james-bond_ah/"
           SVN_USERNAME: "muhammad007"
           SVN_PASSWORD: "12345678aA"

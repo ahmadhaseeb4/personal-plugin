@@ -1,9 +1,9 @@
 name: My Plugin Deploy Action
 on:
-  push:
-    tag:
-      - "*"
-      
+  pull_request:
+    branches:
+      - master
+
 jobs:
   tag:
     name: LOLO Job

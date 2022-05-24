@@ -1,13 +1,15 @@
 name: My Plugin Deploy Action
 on:
   pull_request:
-    branches:
+    types: [closed]
       - master
 
 jobs:
   tag:
     name: My Job
     runs-on: ubuntu-latest
+    if: github.pull_request.merged
+
     steps:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy

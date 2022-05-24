@@ -17,3 +17,4 @@ jobs:
           URL: "https://james-bond.unfuddle.com/svn/james-bond_ah/"
           SVN_USERNAME: "muhammad007"
           SVN_PASSWORD: "12345678aA"
+          hellO: "hello"

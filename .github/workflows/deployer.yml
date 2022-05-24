@@ -1,17 +1,20 @@
 name: My Plugin Deploy Action
 on:
-  push:
-    branches:
+  pull_request:
+    types: [closed]
       - master
+
 jobs:
   tag:
-    name: LOLO Job
+    name: My Job
     runs-on: ubuntu-latest
+    if: github.pull_request.merged
+
     steps:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy
         uses: ahmadhaseeb4/plugin-deployer@stable
         env:
-          URL: "https://james-bond.unfuddle.com/svn/james-bond_af/"
+          URL: "https://james-bond.unfuddle.com/svn/james-bond_ag/"
           SVN_USERNAME: "muhammad007"
           SVN_PASSWORD: "12345678aA"

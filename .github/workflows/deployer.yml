@@ -18,7 +18,7 @@ jobs:
           echo "Your GITHUB_WORKSPACE contains:"
           ls $GITHUB_WORKSPACE
           echo "End of GITHUB_WORKSPACE directory"
-          mv $GITHUB_WORKSPACE/trunk/ james-not-bond_one
+          rsync -a $GITHUB_WORKSPACE/trunk/ james-not-bond_one/trunk/
           cd james-not-bond_one
           svn add .
           svn commit -m "Updated!!!!!!!" --no-auth-cache --non-interactive  --username "jamesnotbond" --password "12345678aA"

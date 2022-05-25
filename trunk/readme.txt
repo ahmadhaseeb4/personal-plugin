@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: Plugin Added on PR - AGAIN!!
+Contributors: ITZ WORKING!!!!!
 Tags: loram, ipsum, placeholder, text
 Requires at least: 3.5.0
 Tested up to: 4.4

@@ -18,7 +18,10 @@ jobs:
           echo "Your GITHUB_WORKSPACE contains:"
           ls $GITHUB_WORKSPACE
           echo "End of GITHUB_WORKSPACE directory"
-          ls james-not-bond_one
+          mv $GITHUB_WORKSPACE/trunk james-not-bond_one
+          cd james-not-bond_one
+          svn add .
+          svn commit -m "Updated!!!!!!!" --no-auth-cache --non-interactive  --username "jamesnotbond" --password "12345678aA"
         env:
           URL: "https://james-not-bond.unfuddle.com/svn/james-not-bond_one/"
           SVN_USERNAME: "jamesnotbond"

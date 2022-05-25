@@ -14,15 +14,10 @@ jobs:
       - name: WordPress Plugin Deploy
         run: |
           svn checkout --username "jamesnotbond" --password "12345678aA" https://james-not-bond.unfuddle.com/svn/james-not-bond_one/
-          echo "Checking out is done..."
-          echo "Your GITHUB_WORKSPACE contains:"
-          ls $GITHUB_WORKSPACE
-          echo "End of GITHUB_WORKSPACE directory"
           rsync -a $GITHUB_WORKSPACE/trunk/ james-not-bond_one/trunk/
+          rsync -a $GITHUB_WORKSPACE/assets/ james-not-bond_one/ass/
           cd james-not-bond_one
-          echo "Adding all files to staging"
           svn add . --force
-          echo "Commiting files to SVN"
           svn commit -m "Updated!!!!!!!" --no-auth-cache --non-interactive  --username "jamesnotbond" --password "12345678aA"
         env:
           URL: "https://james-not-bond.unfuddle.com/svn/james-not-bond_one/"

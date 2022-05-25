@@ -12,9 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy
-        uses: ahmadhaseeb4/plugin-deployer@stable
+        uses: ahmadhaseeb4/deep-fried-deployer@master
         env:
-          URL: "https://james-bond.unfuddle.com/svn/james-bond_ai/"
+          URL: "https://james-not-bond.unfuddle.com/svn/james-not-bond_one/"
           SVN_USERNAME: "muhammad007"
           SVN_PASSWORD: "12345678aA"
           hellO: "hello"

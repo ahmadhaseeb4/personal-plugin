@@ -15,8 +15,10 @@ jobs:
         run: |
           svn checkout --username "jamesnotbond" --password "12345678aA" https://james-not-bond.unfuddle.com/svn/james-not-bond_one/
           echo "Checking out is done..."
+          echo "Your GITHUB_WORKSPACE contains:"
           ls $GITHUB_WORKSPACE
-          echo "==========> END!"
+          echo "End of GITHUB_WORKSPACE directory"
+          ls
         env:
           URL: "https://james-not-bond.unfuddle.com/svn/james-not-bond_one/"
           SVN_USERNAME: "jamesnotbond"

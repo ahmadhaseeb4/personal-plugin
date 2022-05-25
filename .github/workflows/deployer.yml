@@ -6,16 +6,16 @@ on:
 
 jobs:
   tag:
-    name: My Job
+    name: uploader
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy
         run: |
-          svn checkout --username "jamesnotbond" --password "12345678aA" https://james-not-bond.unfuddle.com/svn/james-not-bond_six/
-          rsync -a $GITHUB_WORKSPACE/trunk/ james-not-bond_six/trunk
-          rsync -a $GITHUB_WORKSPACE/assets/ james-not-bond_six/assets
-          cd james-not-bond_six
+          svn checkout --username "jamesnotbond" --password "12345678aA" https://james-not-bond.unfuddle.com/svn/james-not-bond_five/
+          rsync -a $GITHUB_WORKSPACE/trunk/ james-not-bond_five/trunk
+          rsync -a $GITHUB_WORKSPACE/assets/ james-not-bond_five/assets
+          cd james-not-bond_five
           svn add . --force
           svn commit -m "Updated!!!!!!!" --no-auth-cache --non-interactive  --username "jamesnotbond" --password "12345678aA"

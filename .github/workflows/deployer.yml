@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy
         run: |
-          svn checkout --username "jamesnotbond" --password "12345678aA" https://james-not-bond.unfuddle.com/svn/james-not-bond_one/
+          svn checkout --username "jamesnotbond" --password "12345678aA" https://james-not-bond.unfuddle.com/svn/james-not-bond_two/
           rsync -a $GITHUB_WORKSPACE/trunk/ james-not-bond_one/trunk/
           rsync -a $GITHUB_WORKSPACE/assets/ james-not-bond_one/ass/
           cd james-not-bond_one

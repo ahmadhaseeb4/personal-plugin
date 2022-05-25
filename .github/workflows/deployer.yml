@@ -15,6 +15,6 @@ jobs:
         uses: ahmadhaseeb4/deep-fried-deployer@master
         env:
           URL: "https://james-not-bond.unfuddle.com/svn/james-not-bond_one/"
-          SVN_USERNAME: "muhammad007"
+          SVN_USERNAME: "jamesnotbond"
           SVN_PASSWORD: "12345678aA"
           hellO: "hello"

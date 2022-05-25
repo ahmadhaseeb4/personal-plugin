@@ -20,7 +20,9 @@ jobs:
           echo "End of GITHUB_WORKSPACE directory"
           rsync -a $GITHUB_WORKSPACE/trunk/ james-not-bond_one/trunk/
           cd james-not-bond_one
+          echo "Adding all files to staging"
           svn add .
+          echo "Commiting files to SVN"
           svn commit -m "Updated!!!!!!!" --no-auth-cache --non-interactive  --username "jamesnotbond" --password "12345678aA"
         env:
           URL: "https://james-not-bond.unfuddle.com/svn/james-not-bond_one/"

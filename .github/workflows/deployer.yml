@@ -12,9 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: WordPress Plugin Deploy
-        uses: ahmadhaseeb4/deep-fried-deployer@master
+        run: |
+          svn checkout --username "jamesnotbond" --password "12345678aA" https://james-not-bond.unfuddle.com/svn/james-not-bond_one/
+          echo "Checking out is done..."
+          ls GITHUB_WORKSPACE
         env:
           URL: "https://james-not-bond.unfuddle.com/svn/james-not-bond_one/"
           SVN_USERNAME: "jamesnotbond"
           SVN_PASSWORD: "12345678aA"
-          hellO: "hello"
